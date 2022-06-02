@@ -24,22 +24,27 @@
             <result>/WEB-INF/example/{1}.jsp</result>
         </action>
 
-        <action name="CreateAccount" class="com.example.example.CreateAccount">
+        <action name="CreateAccount" class="com.example.example.CreateAccount" method="execute">
+            <interceptor-ref name="defaultStack"/>
             <result name="input">/WEB-INF/example/CreateAccount.jsp</result>
             <result name="success">/WEB-INF/example/CreateAccount.jsp</result>
             <result name="error">/WEB-INF/example/CreateAccount.jsp</result>
         </action>
 
         <action name="LoginAccount" class="com.example.example.LoginAccount" method="execute">
-        <interceptor-ref name="defaultStack"/>
             <result name="input">/WEB-INF/example/LoginAccount.jsp</result>
             <result name="success">/WEB-INF/example/LoginAccount.jsp</result>
             <result name="error">/WEB-INF/example/LoginAccount.jsp</result>
         </action>
 
-        <action name="ListAccount" class="com.example.example.List">
+        <action name="ListAccount" class="com.example.example.List" method="execute">
             <result>/WEB-INF/example/ListAccount.jsp</result>
         </action>
+
+        <action name="displayUser" class="com.example.example.List" method="displayUser">
+            <result>/WEB-INF/example/ListAccount.jsp</result>
+        </action>
+        
 
         <!-- Add additional "example" package actions here. -->
 

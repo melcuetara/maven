@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE validators PUBLIC
-  		"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
-  		"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
 <validators>
-  <field name="username">
+    <field name="username">
         <field-validator type="requiredstring">
-             <message>Username is required </message>
+            <message>Username is required.</message>
         </field-validator>
-   </field>
-   <field name="password">
+    </field>
+    <field name="password">
         <field-validator type="requiredstring">
-             <message>Password is required </message>
+            <message>Password is required.</message>
         </field-validator>
+    </field>
 </validators>

@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Login</title>
+    <s:include value="Navigation.jsp" />
 </head>
 
 <body>
